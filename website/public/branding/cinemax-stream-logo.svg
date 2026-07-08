@@ -1,0 +1,44 @@
+<svg width="520" height="270" viewBox="0 0 520 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 86) rotate(90) scale(120 160)">
+      <stop offset="0" stop-color="#39FF14" stop-opacity="0.2"/>
+      <stop offset="0.45" stop-color="#39FF14" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#39FF14" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cGradient" x1="218" y1="30" x2="302" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C8FF55"/>
+      <stop offset="0.43" stop-color="#39FF14"/>
+      <stop offset="1" stop-color="#00B840"/>
+    </linearGradient>
+    <linearGradient id="cHighlight" x1="263" y1="28" x2="291" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0FFC8"/>
+      <stop offset="1" stop-color="#5BFF1A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="mainGlow" x="100" y="-45" width="320" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.17 0 0 0 0 1 0 0 0 0 0.03 0 0 0 0.42 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="textGlow" x="0" y="115" width="520" height="110" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="520" height="270" fill="transparent"/>
+  <ellipse cx="260" cy="88" rx="190" ry="128" fill="url(#halo)"/>
+  <path d="M319.2 119.8C306.9 136.1 287.5 146 265.6 146C228.3 146 198 116.2 198 79.1C198 42.1 228.3 12.1 265.6 12.1C287.2 12.1 306.9 22.3 319.7 39.1L296.6 56.1C289.7 46.8 278.3 41.2 265.6 41.2C244.5 41.2 227.5 58.2 227.5 79.1C227.5 100 244.5 116.9 265.6 116.9C278.2 116.9 289.5 111.5 296.4 102.3L319.2 119.8Z" fill="url(#cGradient)" filter="url(#mainGlow)"/>
+  <path d="M265.6 12.1C282.1 12.1 297.4 17.9 309.5 27.9L293.2 52.1C286 45.2 276.3 41.2 265.6 41.2V12.1Z" fill="url(#cHighlight)" opacity="0.85"/>
+  <path d="M228.8 80.3C228.8 101.1 245.6 118.3 265.9 118.3C277.9 118.3 289.2 112.9 296.3 103.6L311.6 115.3C301.1 130.1 284.5 139.2 265.2 139.2C232.8 139.2 206.6 113 206.6 80C206.6 47.2 232.7 20.7 265.3 20.7V39.9C244.8 39.9 228.8 57.2 228.8 80.3Z" fill="#D9FF73" opacity="0.18"/>
+  <g filter="url(#textGlow)">
+    <text x="260" y="184" text-anchor="middle" fill="#F8FFF7" font-family="Montserrat, Inter, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="20">CINEMAX</text>
+    <line x1="118" y1="214" x2="212" y2="214" stroke="#39FF14" stroke-width="3"/>
+    <text x="260" y="223" text-anchor="middle" fill="#39FF14" font-family="Montserrat, Inter, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="18">STREAM</text>
+    <line x1="310" y1="214" x2="402" y2="214" stroke="#39FF14" stroke-width="3"/>
+  </g>
+</svg>
